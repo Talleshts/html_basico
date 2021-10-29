@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html> <!--Tag principal-->
+	
+	<head> <!--Cabeça do site, parte organizacional-->
+		<title>Título do website</title> <!--Título do site-->
+		<meta charset="UTF-8" /> <!--Padrão américa latina, com acentuações-->
+	</head>
+
+<body> 
+
+
+	<!-----------------------------------------------------AULA 1 TEXTOS--------------------------------------------------->
+
+	<!-- Corpo do site, onde fica organizado todo esqueleto do conteúdo dele-->
+		
+		<h1 align="center"> HIPERTEXTO </h1>
+		<h6>Nome da página H6</h6> <!--Tag de título vai do H6 até o H1 definindo o tamanho das letras,sendo o H1 o maior-->
+		<h5>Nome da página H5</h5> 
+		<h4>Nome da página H4</h4> 
+		<h3>Nome da página H3</h3>
+		<h2>Nome da página H2</h2>
+		<h1>Nome da página H1</h1>
+
+		<h1 align="center">PARÁGRAFO</h1>
+		<p>Esta tag < p>, é um texto comum, simboliza o parágrafo</p> <!--Tag para texto normal em que ficaria em "Paragrafos", como um texto normal, chamada de blocos na programação-->
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit felis sed purus dapibus convallis. Nunc vestibulum convallis sodales. Curabitur tempus tellus ac nisl fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus non dolor elementum, viverra purus quis, vestibulum sapien. Donec id nisl vehicula, laoreet tortor ac, interdum lorem. Aenean non vestibulum quam. Quisque non tortor luctus, facilisis ex non, ornare ligula."</p>
+
+		<p>Os textos não se unem, cada tag é um parágrafo diferente!</p>
+
+		<h1 align="center">SPAN</h1>
+		<span>Esta é outra tag chamada "span" onde o texto fica na linha apenas.</span> <!--Tag para texto em linha mas pode ser quebrado com a tag <br/>-->
+		<span>Ao contrário do Parágrafo, o span pode ter várias tags</span>
+		<span>que vai sempre tender a manter na mesma linha!</span>
+		<span>A não ser que</span>
+		<br>
+		<span>tenha uma quebra de linha</span>
+		<br>
+		<br>
+	
+ 
+ 	<!----------------------------------------------------AULA 2 IMAGENS E LINKS------------------------------------------->
+ 		<h1 align="center">IMAGENS</h1>
+		<p>Além de textos em linha e em blocos, é possível adicionar imagens com a tag "< img/>" colocando o atributo src="" para achar aonde você vai retirar a imagem. como vemos abaixo </p>
+
+		<img src="https://img.freepik.com/fotos-gratis/gotas-de-oleo-na-imagem-abstrata-padrao-psicodelico-de-agua_23-2148290141.jpg?size=626&ext=jpg" width="500">
+		<span>A imagem pode ser como essa ao lado retirada da internet</span>
+		<img src="imagens/imagem.jpg" width="500">
+		<span>Ou como essa aqui retirada do próprio diretório do documento Html</span>
+		<br>
+		<br>
+
+		<p>O HTML vem evoluindo cada vez mais, e há possiblidade de por atualmente vídeos, áudios, imagens e links além dos textos comuns sem precisar de algum plugin extra</p>
+
+		<h1 align="center">LINK</h1>
+		<span>Observe como adiciona o link:</span>
+		<p>1º - utilize a tag "< a href=""> < a/>" para por um link</p>
+		<p>2º - dentro das aspas, ponha o link desejado</p>
+		<p>3º - entre a tag de abertura e fechamento escreva seu texto que deseja tranformar em link</p>
+		<a href="https://www.google.com">Link</a>
+		<p> Caso queira que seu link abra em outra aba, sem fechar seu site, use o atributo target="_blank" dentro da tag de abertura < a>, desta forma < a target="_blank"> assim você vai ter um link desse formato abaixo </p>
+		<a target="_blank" href="https://www.google.com">Link</a>
+		<br>
+		<br>
+
+		<!----------------------------------------AULA 3 TABELAS, DIVISÕES, FORMULÁRIOS E ETC------------------------------>
+		<h1 align="center">DIV</h1>
+		<p>É possível organizar o conteúdo do site em divisórias, usando a tag < div>, funciona da seguinte maneira</p>
+		<img src="https://www.html5rocks.com/pt/tutorials/internals/howbrowserswork/image069.png">
+
+		<div>
+		<h1 align="center">TABELA</h1>
+		<p>Também é possível fazer tabelas por aqui com a tag "< table>"</p>
+		<p>Dentro da tag "table" existem outras tags de divisões, as primeiras são de organização, 
+		chamadas de "thead" e "tbody" aonde são postos os títulos das tabelas e o conteúdo de cada</p>
+		<p>Além dessas, existem as tags de linhas e colunas, a tag "tr" representa linhas, na horizontal</p>
+		<p>E a tag "td" representa as colunas, na vertical</p>
+		<p>Dentro da thead as colunas são chamadas de "th" para serem destacadas como títulos</p>
+		<table align="center" border="1">
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Idade</th>
+					<th>Cargo</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Talles</td>
+					<td>18 anos</td>
+					<td>Estudante</td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+
+		<h1 align="center">FORMULÁRIO</h1>
+		<p>O formulário é a tag < form> que é utilizada em muitos sites para ter um contato maior entre desenvolvedor e usuário.</p>
+		<p>Dentro de form tem a tag < input> na qual é criada os elementos de um formulário, como botões e caixas de texto</p>
+		<p>Para escolher o tipo do seu input, deve lançar o atributo type="" Dento da tag input para escolher.</p>
+		<p>Por exemplo, se for um input de texto, só por type="text" que vai aparecer uma caixa de texto, caso queira uma caixa de texto para senha, só por type="password" que iria alterar o padrão da caixa.</p>
+		<p>Caso queira adicionar um botão, só por type="button" value="Algo que vc queira escrito dentro do botão"</p>
+		<p>Se o caso for um texto grande, usa-se a tag < textarea> para coloca-lo.</p>
+		<form>
+			<input type="text"/>
+			<textarea></textarea>
+			<input type="button" value="Enviar" />
+		</form>
+		<h1>Extras</h1>
+		<p>Além disso, tem alguns usos de HTML para a letra em <b>negrito, </b><i>Itálico, </i> e <u>Sulinhado.</u></p>
+		<p>E são as tags < b>, < i> e < u> respectivamente.</p>
+
+
+
+
+
+	</body>
+</html>

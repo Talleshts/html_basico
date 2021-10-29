@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iniciando o CSS</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="menu">
+		<a href="">Início</a>
+		<a href="">CSS</a>
+		<a href="">id e class</a>
+		<a href="">Estilizando</a>						
+	</div>
+
+<h1 align="center">CSS</h1>
+		<p>O CSS significa Cascading Style Sheet, e é ele o principal para dar arrumação e estilização ao site.</p>
+		<p>O CSS têm três formas de ser adicionado ao código:</p>
+				<span>In line: Que se aplica o estilo na mesma linha/tag que você quer que seja estilizada </span>
+		<br />
+				<span>Interno: Que você adiciona dentro da head a tag   astyle> e põe suas características desejadas nela    </span>
+		<br />
+				<span>Externo: O mais comum e mais usado para sites grandes, que é criado um outro arquivo para adicionar o estilo e na head só linka o nome dele, geralmente feito por style.css</span>
+				<div align="center">
+		<img src="https://www.bitdegree.org/learn/storage/media/images/8c4493d3-110c-4a95-8b70-7626ce2d2f4e.jpg" width="400" border="1">
+				</div>
+
+<br>
+<hr border=2px>
+
+<h1 align="center">Separando com ID e Class</h1>
+<div align="center">
+	<img src="https://www.montarumblog.com/wp-content/uploads/2014/01/class-e-id1.jpg">
+</div>
+
+<p align="center"><strong>O ID deve ser único</strong> para cada elemento e não se pode repetir em seu código, já<strong> a classe, pode haver vários elementos com a mesma. </strong></p>
+
+<div align="center">
+	<span>A class é chamada usando um ponto .</span>
+<br>
+	<span>Já o id é chamado usando um sharp #</span>
+</div>
+
+<hr>
+<br/>
+<br/>
+<br/>
+<br/>
+<hr>
+
+<h1 align="center">Padding, Margin e Border</h1>
+<div align="center">
+	<img src="https://elo7.dev/images/css-basics-margin-padding-2.png">
+	<img src="https://lh3.googleusercontent.com/proxy/eLps4UyH-rtVZXH09RRV4i4UlpVVu3FP3zyAVPa5CUtzM6Fx_QcCnzBmcyg648XP8VKLetzfPzmF-VW8o0ZUI2xbTJxtZDCVghoi8fXBuaO0SHnQqgx7Lbdsk_ZIiFcPjcTahzloZBmtBtKoOZkdGOEg2tdLgp3vFRFwtBc">
+</div>
+		<br/>
+		<br/>
+<div align="center">
+		<p class="titulo" align="center">A grosso modo a grande diferença é:</p>
+		<br/>
+		<br/>
+		<p><strong>Margin / Margem - Espaçamento fora do conteúdo.</strong></p>
+
+		<p><strong>Padding / Preenchimento - Espaçamento interno. Dentro dos limites do conteúdo.</strong></p>
+
+		<br/>
+
+		<p>Tendo em conta que o limite do espaçamento do conteúdo de um elemento é a sua borda (border box). Portanto, a grande diferença neste caso será que a margem é aplicada já fora do elemento e criará espaçamento entre os restantes elementos, porém o padding irá criar espaçamento dentro do próprio conteúdo do elemento, não afetando o espaçamento dos outros elementos.</p>
+		<br>
+</div>
+<hr>
+<br>
+<div>
+	<h1 align="center">Ordem de prioridade(ESPECIFICIDADE)</h1>
+	<p align="center"><i>Conteúdo encontrado no site da <a target="_blank" href="https://www.tipscode.com.br/especificidade-css-5-coisas-que-voce-precisa/">TipsCode</i></a></p>
+	
+		<h3><strong>1. Id é maior que classe: </strong></h3>
+		<p>Se um elemento qualquer tiver um ID, e tiver 5 classes
+		ao mesmo tempo. Ele irá satisfazer a ordem do ID</p>
+		<br>
+		<h3><strong>2. Mais específico</strong></h3>
+		<p>Se um elemento tiver 4 classes, e no CSS tiver uma alteração, 
+		<br> marcando 2/4 classes por exemplo, e outra marcando 3/4,
+		 a alteração será da mais específica no caso a 3/4.<br></p>
+		 <br>
+		<h3><strong>3. CSS inline</strong></h3>
+		<p>Sempre que algo tiver o CSS in line, não tem nada nesse mundo que poderia 
+			alterar essa estilização. Então não é bom misturar CSS inline com CSS baseado em seletor. <br>
+			<br>
+		</p>
+		<h3>4. !important</h3>
+		<p>Sempre que tiver alguma alteração, mesmo que seja de baixa
+			prioridade; ao colocar !important, ela terá prioridade máxima no
+			navegador, nesse caso, tem como uma classe ser mais importante
+			que um ID. 
+			<br>
+		</p>
+		
+	<br>
+
+</div>
+
+
+
+<hr>
+<h1 align="center">Estilizando</h1>
+
+	<h1>Título h1</h1>
+	<h2>Título h2</h2>
+	<h3>Título h3</h3>
+	<h4>Título h4</h4>
+	<h5>Título h5</h5>
+	<h6>Título h6</h6>
+
+<div align="right">	
+	<a style=" text-decoration: none; font-size: 25px; font-weight: bold; color: black;" target="_blank" href="https://www.google.com">Meu link</a>
+</div>
+</body>
+</html>
